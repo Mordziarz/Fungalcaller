@@ -1,5 +1,10 @@
 # 🍄 Fungalcaller: End-to-End Nextflow Pipeline for Fungal Comparative Genomics & Phylogenomics
 
+[![Nextflow](https://img.shields.io/badge/nextflow-DSL2-20232A?style=flat&logo=nextflow&logoColor=007396)](https://www.nextflow.io/)
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg?style=flat&logo=docker&logoColor=white)](https://hub.docker.com/r/mordziarz/fungi_pipeline)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Bioinformatics](https://img.shields.io/badge/domain-fungal%20genomics-orange.svg)]()
+
 An automated, containerized **Nextflow (DSL2)** pipeline designed for comprehensive processing, structural/functional annotation, secretome/effector profiling, and high-resolution phylogenomic reconstruction of fungal genomes (optimized and tested on *Trichoderma, Fusarium and Clonostachys*).
 
 ---
