@@ -45,7 +45,7 @@ Trichoderma_paratroviride,fastq,/path/to/reads/strain_C_R1.fastq.gz,/path/to/rea
 ## 🛠️ Requirements & Dependencies
 
 ```text
-- Nextflow (version 22.0 or higher)
+- Nextflow (version 24.04.4)
 - Docker (with access to container: mordziarz/fungi_pipeline:latest)
 - Recommended Hardware:
   - CPU: 8+ cores
