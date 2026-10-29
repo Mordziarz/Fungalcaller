@@ -12,7 +12,7 @@ An automated, containerized **Nextflow (DSL2)** pipeline designed for comprehens
 * **Structural & Functional Annotation:** **RepeatMasker** (repeat masking), **Augustus** (gene prediction), and **AntiSMASH** (biosynthetic gene clusters).
 * **Functional Profiling:** Functional annotation via **EggNOG-mapper** and **InterProScan**.
 * **Secretome & Effector Discovery:** Dedicated prediction pipeline using **DeepSig** (signal peptides) and **EffectorP** (fungal effectors).
-* **Comparative & Phylogenomic Pipeline:** Orthologue group inference via **OrthoFinder**, multiple sequence alignment with **MAFFT**, gap trimming with **trimAl**, concatenated supermatrix generation, and Maximum Likelihood tree building with **RAxML-NG** (1000 bootstrap replicates).
+* **Comparative & Phylogenomic Pipeline:** Orthologue group inference via **OrthoFinder**, multiple sequence alignment with **MAFFT**, gap trimming with **trimAl**, concatenated supermatrix generation with **phykit**, and Maximum Likelihood tree building with **RAxML-NG** (1000 bootstrap replicates).
 * **Full Reproducibility:** Containerized execution via **Docker** (`mordziarz/fungi_pipeline:latest`) managed through Nextflow process resources.
 
 ---
