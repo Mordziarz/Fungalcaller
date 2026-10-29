@@ -69,7 +69,6 @@ nextflow run Mordziarz/Fungalcaller \
     -r main \
     --samples_table samples_table.csv \
     --outgroup "sample4" \
-    -profile docker \
     -resume
 ```
 
