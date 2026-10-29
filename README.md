@@ -56,7 +56,7 @@ Trichoderma_paratroviride,fastq,/path/to/reads/strain_C_R1.fastq.gz,/path/to/rea
 ## 📥 Installation & Usage
 
 ### Step 1: Download required databases
-Before running the pipeline, ensure your biological databases are downloaded and configured locally (e.g., via the provided `download_databases.sh` script):
+Before running the pipeline, ensure your biological databases are downloaded and configured locally in the working directory where Nextflow will be executed (e.g., via the provided download_databases.sh script):
 ```bash
 ./download_databases.sh
 ```
