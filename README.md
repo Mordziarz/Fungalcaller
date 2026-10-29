@@ -9,7 +9,7 @@ An automated, containerized **Nextflow (DSL2)** pipeline designed for comprehens
 * **Flexible Input:** Seamlessly handles both raw short-read sequencing data (`FASTQ`) via automated assembly or pre-assembled genome sequences (`FASTA`).
 * **Quality Control & Assembly:** **FastQC**, **FastP** trimming, **SPAdes** assembly, and **Tiara**-based contig cleaning/filtering.
 * **Genome Completeness & Statistics:** Automated **BUSCO** evaluation and **Jellyfish** k-mer profiling with summary aggregation.
-* **Structural & Functional Annotation:** **RepeatMasker** (repeat masking), **Augustus** (ab initio gene prediction), and **AntiSMASH** (biosynthetic gene clusters).
+* **Structural & Functional Annotation:** **RepeatMasker** (repeat masking), **Augustus** (gene prediction), and **AntiSMASH** (biosynthetic gene clusters).
 * **Functional Profiling:** Functional annotation via **EggNOG-mapper** and **InterProScan**.
 * **Secretome & Effector Discovery:** Dedicated prediction pipeline using **DeepSig** (signal peptides) and **EffectorP** (fungal effectors).
 * **Comparative & Phylogenomic Pipeline:** Orthologue group inference via **OrthoFinder**, multiple sequence alignment with **MAFFT**, gap trimming with **trimAl**, concatenated supermatrix generation, and Maximum Likelihood tree building with **RAxML-NG** (1000 bootstrap replicates).
