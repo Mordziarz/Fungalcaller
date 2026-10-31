@@ -15,6 +15,6 @@ process BUSCO {
           -l ${params.busco_lineage} \
           -o ${sample_id}_busco_out \
           -c ${task.cpus} \
-          --quiet
+          --quiet -f
     """
 }
