@@ -57,12 +57,21 @@ Trichoderma_paratroviride,fastq,/path/to/reads/strain_C_R1.fastq.gz,/path/to/rea
 
 ### Step 1: Download required databases
 Before running the pipeline, ensure your biological databases are downloaded and configured locally in the working directory where Nextflow will be executed (e.g., via the provided download_databases.sh script):
+
+Download Dockerfile !!!!
+
 ```bash
 ./download_databases.sh
 ```
 
 ### Step 2: Run the pipeline
 You can run **Fungalcaller** directly from GitHub using Nextflow:
+
+Nextflow version:
+
+```bash
+export NXF_VER=24.04.4
+```
 
 ```bash
 nextflow run Mordziarz/Fungalcaller \
