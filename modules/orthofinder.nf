@@ -16,7 +16,7 @@ process ORTHOFINDER {
     [ "\$A_THREADS" -gt 8 ] && A_THREADS=8
     [ "\$A_THREADS" -lt 1 ] && A_THREADS=1
 
-    T_THREADS=$(( ${task.cpus} / A_THREADS ))
+    T_THREADS=\$(expr ${task.cpus} / \$A_THREADS)
     [ "\$T_THREADS" -lt 1 ] && T_THREADS=1
 
     orthofinder -f ortho_input -t "\$T_THREADS" -a "\$A_THREADS"
