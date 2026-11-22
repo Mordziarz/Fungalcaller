@@ -9,11 +9,14 @@ process TRIMAL {
     path(aligned_fa)
 
     output:
-    path("*_trimmed.fa"), emit: trimmed_fa
+    path("*_trimmed.fa"), optional: true, emit: trimmed_fa
 
     script:
     """
     set -euo pipefail
     trimal -in ${aligned_fa} -out ${aligned_fa.baseName}_trimmed.fa -automated1
+    if [ ! -s "${aligned_fa.baseName}_trimmed.fa" ]; then
+        rm -f "${aligned_fa.baseName}_trimmed.fa"
+    fi
     """
 }
