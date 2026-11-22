@@ -90,7 +90,7 @@ workflow {
 
     TRIMAL(MAFFT_ALIGN.out.aligned_fa)
 
-    ALIGNMENT_CONCATENATION(TRIMAL.out.trimmed_fa.collect())
+    ALIGNMENT_CONCATENATION(TRIMAL.out.trimmed_fa.collect(),file(params.samples_table))
 
     RAXML(ALIGNMENT_CONCATENATION.out.alignment)
 }
