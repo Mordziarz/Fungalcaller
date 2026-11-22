@@ -5,6 +5,7 @@ process ALIGNMENT_CONCATENATION {
 
     input:
     path alignments
+    path samples_csv
 
     output:
     path "concatenated_alignment.fasta", emit: alignment
@@ -14,9 +15,9 @@ process ALIGNMENT_CONCATENATION {
     script:
     """
     set -euo pipefail
-    
+
     echo "Concatenating normalized orthologs and auditing variants..."
-    
-    python3 ${workflow.projectDir}/bin/run_phykit_concat.py ${alignments}
+
+    python3 ${workflow.projectDir}/bin/run_phykit_concat.py --samples-table "${samples_csv}" ${alignments}
     """
 }
